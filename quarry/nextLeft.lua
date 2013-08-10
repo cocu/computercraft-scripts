@@ -1,0 +1,7 @@
+turtle.forward()
+turtle.turnLeft()
+turtle.forward()
+turtle.forward()
+turtle.turnRight()
+turtle.digDown()
+turtle.down()

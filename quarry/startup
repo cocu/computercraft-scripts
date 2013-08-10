@@ -1,0 +1,15 @@
+if fs.exists("log") then
+    fp=fs.open("log","r")
+    t=fp.readAll()
+    num=tonumber(t)
+    print(num)
+    for i=1,num do
+        flag = turtle.up()
+        if not flag then
+            turtle.digUp()
+            turtle.up()
+        end
+    end
+    fs.delete("log")
+end
+
