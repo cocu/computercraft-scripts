@@ -1,7 +1,8 @@
 if fs.exists("log") then
     fp=fs.open("log","r")
     t=fp.readAll()
-    num=tonumber(t)
+    fp.close()
+    num=tonumber(t)+1
     print(num)
     for i=1,num do
         flag = turtle.up()

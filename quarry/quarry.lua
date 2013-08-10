@@ -27,7 +27,8 @@ while flag do
             fs.delete("log")
         end
         fp=fs.open("log","w")
-	fp.write(depth)
+	    fp.write(tostring(depth))
+        fp.close()
     end
 end
 
@@ -47,7 +48,8 @@ while i>0 do
         fs.delete("log")
     end
     fp=fs.open("log","w")
-    fp.write(i)
+    fp.write(tostring(i))
+    fp.close()
 end
 
 
